@@ -12,7 +12,8 @@ Créer une page liste-patients.php et y afficher la liste des patients. Inclure 
 
 ## Exercice 3
 
-Créer une page profil-patient.php. Elle doit permettre d'afficher toutes les informations d'un patient. Elle doit être accessible depuis la page patients.php et afficher les informations du patient sélectionné.
+Créer une page profil-patient.php. Elle doit permettre d'afficher toutes les informations d'un patient. Elle doit être accessible depuis la page patients.php et afficher les informations du patient sélectionné.  
+**Bonus** : Réécrire l'URL sous la forme **/profil/nom-prenom.html**
 
 ## Exercice 4
 
