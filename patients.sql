@@ -1,20 +1,21 @@
 #------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
-
+CREATE DATABASE IF NOT EXISTS `HospitalE2N`;
+USE `HospitalE2N`;
 
 #------------------------------------------------------------
 # Table: patients
 #------------------------------------------------------------
 
-CREATE TABLE patients(
-        id        int (11) Auto_increment  NOT NULL ,
-        lastname  Varchar (25) NOT NULL ,
-        firstname Varchar (25) NOT NULL ,
-        birthdate Date NOT NULL ,
-        phone     Varchar (25) ,
-        mail      Varchar (25) NOT NULL ,
-        PRIMARY KEY (id )
+CREATE TABLE IF NOT EXISTS `patients`(
+        `id`        INT (11) AUTO_INCREMENT  NOT NULL ,
+        `lastname`  VARCHAR (25) NOT NULL ,
+        `firstname` VARCHAR (25) NOT NULL ,
+        `birthdate` DATE NOT NULL ,
+        `phone`     VARCHAR (25) ,
+        `mail`      VARCHAR (100) NOT NULL ,
+        PRIMARY KEY (`id`)
 )ENGINE=InnoDB;
 
 
@@ -22,11 +23,11 @@ CREATE TABLE patients(
 # Table: appointments
 #------------------------------------------------------------
 
-CREATE TABLE appointments(
-        id          int (11) Auto_increment  NOT NULL ,
-        date_hour   Datetime NOT NULL ,
-        id_patients Int NOT NULL ,
-        PRIMARY KEY (id )
+CREATE TABLE IF NOT EXISTS `appointments`(
+        `id`         INT (11) AUTO_INCREMENT  NOT NULL ,
+        `dateHour`   DATETIME NOT NULL ,
+        `idPatients` INT (11) NOT NULL ,
+        PRIMARY KEY (`id`)
 )ENGINE=InnoDB;
 
-ALTER TABLE appointments ADD CONSTRAINT FK_appointments_id_patients FOREIGN KEY (id_patients) REFERENCES patients(id);
+ALTER TABLE `appointments` ADD CONSTRAINT FK_appointments_id_patients FOREIGN KEY (`idPatients`) REFERENCES `patients`(`id`);
