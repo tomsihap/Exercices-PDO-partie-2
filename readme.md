@@ -45,7 +45,7 @@ Depuis la page liste-rendezvous.php permettre la suppression d'un rendez-vous.
 
 ## Exercice 11
 
-Depuis la page liste-.php, permettre de supprimer un patient et ses rendez-vous.
+Depuis la page liste-patients.php, permettre de supprimer un patient et ses rendez-vous.
 
 ## Exercice 12
 
