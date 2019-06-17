@@ -16,17 +16,20 @@ creator
 type_id
 ```
 
+```
 Type
 -------
 id
 name
+```
 
+```
 User
 -------
 id
 name
 media_id
-
+```
 
 ## Affichage
 
